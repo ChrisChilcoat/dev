@@ -36,6 +36,7 @@ function App() {
               <Work />
               <Contact />
               <Footer />
+              <ScrollToTop />
             </>
           } />
           <Route path="yakabox" element={
@@ -51,15 +52,6 @@ function App() {
             <>
               <Navigation />
               <Cisobox />
-              <Contact />
-              <Footer />
-              <ScrollToTop />
-            </>
-          } />
-          <Route path="cisobox" element={
-            <>
-              <Navigation />
-              <Yakadrive />
               <Contact />
               <Footer />
               <ScrollToTop />
