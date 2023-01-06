@@ -1,11 +1,7 @@
-import './App.css';
-
 import React from "react";
-import { HashRouter, Route, Routes, Link} from "react-router-dom";
-import { HashLink } from '@xzar90/react-router-hash-link';
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon, CheckIcon } from '@heroicons/react/24/outline'
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+import { HashRouter, Route, Routes, HashLink, Link} from "react-router-dom";
 import Navigation from './pages/navigation';
 import Hero from './pages/hero';
 import Expertise from './pages/expertise';
@@ -17,9 +13,6 @@ import Yakabox from './pages/yakabox';
 import Cisobox from './pages/cisobox';
 import Yakadrive from './pages/yakadrive';
 
-import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -29,7 +22,6 @@ function ScrollToTop() {
 
   return null;
 }
-
 
 function App() {
   return (
