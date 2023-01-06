@@ -2,6 +2,7 @@
   "name": "dev",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://chrischilcoat.github.io/dev",
   "dependencies": {
     "@headlessui/react": "^1.7.5",
     "@heroicons/react": "^2.0.13",
