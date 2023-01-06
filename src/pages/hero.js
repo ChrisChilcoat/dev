@@ -35,7 +35,7 @@ function Hero() {
               <span className="text-3xl sm:text-4xl bold md:text-5xl block xl:inline mt-3 sm:mt-5 md:mt-5">UI Designer & <br/>Front-end Developer</span>
             </h1>
             <p className="mt-3 text-base text-gray-500 sm:mx-auto sm:mt-5 sm:max-w-xl sm:text-lg md:mt-5 md:text-xl lg:mx-0">
-            Greetings, I am Chris, and I specialize in crafting front-ends for large enterprise web applications.
+            Greetings, I'm Chris, and I specialize in crafting front-ends for large enterprise web applications.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">

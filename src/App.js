@@ -34,7 +34,7 @@ function ScrollToTop() {
 function App() {
   return (
     <div className="bg-gray-50">
-      <HashRouter basemname={`/${process.env.PUBLIC_URL}`}>
+      <HashRouter>
         <Routes>
           <Route path="/" element={
             <>
