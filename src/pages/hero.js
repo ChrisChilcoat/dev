@@ -30,9 +30,9 @@ function Hero() {
           <nav className="relative flex items-center justify-between sm:h-10 lg:justify-start" aria-label="Global">
             <div className="flex flex-shrink-0 flex-grow items-center lg:flex-grow-0">
               <div className="flex w-full items-center justify-between md:w-auto text-3xl">
-                <a href="/">
+                <HashLink to='/'>
                   <span class="font-semibold text-white opacity-90 drop-shadow-md">Chris Chilcoat</span>
-                </a>
+                </HashLink>
               </div>
             </div>
           </nav>
