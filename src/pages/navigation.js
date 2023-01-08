@@ -13,11 +13,11 @@ const scrollToBottom = () => {
 
 function Navigation() {
   return (
-  <div className="relative overflow-hidde">
+  <div className="relative bg-cyan-500">
     <div className="mx-auto max-w-7xl relative">
       <div className="relative z-10 bg-gradient-to-r from-cyan-500 to-blue-500 pb-7 mb-8 sm:mb-16 md:mb-20 lg:w-full lg:max-w-2xl lg:mb-28 xl:mb-32">
         <svg
-          className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-white lg:block"
+          className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-blue-500 lg:block"
           fill="currentColor"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"

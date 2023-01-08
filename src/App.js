@@ -25,7 +25,6 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div className="bg-gray-50">
       <HashRouter>
         <Routes>
           <Route path="/" element={
@@ -67,7 +66,6 @@ function App() {
           } />
         </Routes>
       </HashRouter>
-    </div>
   );
 }
 
