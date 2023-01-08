@@ -1,6 +1,4 @@
-# Teton Dashboard
-
-Personal portfolio website. 
+# Personal Portfolio Website
 
 [View Demo](https://chrischilcoat.github.io/dev/)
 
