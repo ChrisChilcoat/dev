@@ -1,6 +1,6 @@
 # Personal Portfolio Website
 
-[View Demo](https://chrischilcoat.github.io/dev/)
+[View Website](https://chrischilcoat.github.io/dev/)
 
 ## Install
 
