@@ -1,25 +1,24 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, CheckIcon } from '@heroicons/react/24/outline'
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom" 
 import { HashLink } from '@xzar90/react-router-hash-link'
+import Dash from '../components/dash'
+import YakaboxSmallImage from '../images/YakaboxSmall.png';
+import CisoboxSmallImage from '../images/CisoboxSmall.png';
 
 const work = [
   {
     title: 'Yakabox',
     href: 'yakabox',
-    description:
-      'A secure enterprise productivity solution trusted by the U.S intelligence community.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+    description:'A secure enterprise productivity solution trusted by the U.S intelligence community.',
+    imageUrl:YakaboxSmallImage
   },
   {
     title: 'Cisobox',
     href: 'cisobox',
-    description:
-      'Secirity incident managment & reporting software.',
-    imageUrl:
-      'https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80',
+    description:'Secirity incident managment & reporting software.',
+    imageUrl:CisoboxSmallImage
   },
 ]
 
@@ -32,15 +31,16 @@ function Work() {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">A Peek at Some of My Past Projects</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+          <Dash/>
+          <p className="mx-auto max-w-2xl text-xl text-gray-500">
             Case Studies and Examples of Products I've Helped Create.
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-2xl lg:grid-cols-2">
           {work.map((item) => (
-            <div key={item.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-              <div className="flex-shrink-0">
-                <img className="h-48 w-full object-cover" src={item.imageUrl} alt="" />
+            <div key={item.title} className="border flex flex-col overflow-hidden rounded-lg shadow-lg">
+              <div className="flex-shrink-0 border-b">
+                <img className="h-full w-full object-cover" src={item.imageUrl} alt="" />
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
                 <div className="flex-1">

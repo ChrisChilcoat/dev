@@ -1,4 +1,5 @@
 import { CheckIcon } from '@heroicons/react/24/outline'
+import Dash from '../components/dash';
 
 const areas = [
   {
@@ -45,15 +46,16 @@ function Expertise() {
     <div className="bg-white">
       <div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Areas of Specialization </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-gray-600">
-            As a multi-disciplinary UI designer and front-end developer, I have a broad range of skills and expertise.          </p>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">My Areas of Specialization </h2> 
+          <Dash/>
+          <p className="mx-auto max-w-xl text-lg leading-8 text-gray-600">
+            As a multi-disciplinary UI designer and front-end developer, <br/>I have a broad range of skills and expertise.          </p>
         </div>
         <dl className="mt-20 grid grid-cols-1 gap-12 sm:grid-cols-2 sm:gap-x-6 lg:grid-cols-4 lg:gap-x-8">
           {areas.map((item) => (
             <div key={item.name} className="relative">
               <dt>
-                <CheckIcon className="absolute mt-1 h-6 w-6 text-indigo-600" aria-hidden="true" />
+                <CheckIcon className="absolute mt-1 h-6 w-6 rounded-full text-blue-600" aria-hidden="true" />
                 <p className="ml-10 text-lg font-semibold leading-8 text-gray-900">{item.name}</p>
               </dt>
               <dd className="mt-2 ml-10 text-base leading-7 text-gray-600">{item.description}</dd>

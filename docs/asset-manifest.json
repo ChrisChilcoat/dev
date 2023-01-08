@@ -1,9 +1,12 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.957fafe4.css",
-    "main.js": "/dev/static/js/main.a4403100.js",
+    "main.css": "/dev/static/css/main.1d934902.css",
+    "main.js": "/dev/static/js/main.829f7e03.js",
     "static/js/787.b3d79b74.chunk.js": "/dev/static/js/787.b3d79b74.chunk.js",
-    "static/media/teton.jpg": "/dev/static/media/teton.bbcf2644469c317193e2.jpg",
+    "static/media/SocialMediaSmall.png": "/dev/static/media/SocialMediaSmall.9bf0b4b0398b6368bd1f.png",
+    "static/media/TetonSmall.png": "/dev/static/media/TetonSmall.bd8375f58b9b063f05cb.png",
+    "static/media/YakaboxSmall.png": "/dev/static/media/YakaboxSmall.e3491018d2789c6791af.png",
+    "static/media/CisoboxSmall.png": "/dev/static/media/CisoboxSmall.5b37ee1effdf49d76b6e.png",
     "static/media/yakabox17.png": "/dev/static/media/yakabox17.d58e955ac6a318310dfc.png",
     "static/media/yakabox9.png": "/dev/static/media/yakabox9.3b33f6b4de81321600f1.png",
     "static/media/yakabox3.png": "/dev/static/media/yakabox3.b7401808195a17d08df7.png",
@@ -20,14 +23,13 @@
     "static/media/yakabox19.png": "/dev/static/media/yakabox19.409102f9a0435ed8a79f.png",
     "static/media/yakabox11.png": "/dev/static/media/yakabox11.21b04d89bd762f391cfc.png",
     "static/media/yakabox16.png": "/dev/static/media/yakabox16.e78e9ca9f2730f54e813.png",
-    "static/media/social.jpeg": "/dev/static/media/social.7fc00b55c0162496635d.jpeg",
     "index.html": "/dev/index.html",
-    "main.957fafe4.css.map": "/dev/static/css/main.957fafe4.css.map",
-    "main.a4403100.js.map": "/dev/static/js/main.a4403100.js.map",
+    "main.1d934902.css.map": "/dev/static/css/main.1d934902.css.map",
+    "main.829f7e03.js.map": "/dev/static/js/main.829f7e03.js.map",
     "787.b3d79b74.chunk.js.map": "/dev/static/js/787.b3d79b74.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.957fafe4.css",
-    "static/js/main.a4403100.js"
+    "static/css/main.1d934902.css",
+    "static/js/main.829f7e03.js"
   ]
 }

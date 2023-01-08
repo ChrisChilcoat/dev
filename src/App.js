@@ -57,6 +57,14 @@ function App() {
               <ScrollToTop />
             </>
           } />
+          <Route path="contact" element={
+            <>
+              <Navigation />
+              <Contact />
+              <Footer />
+              <ScrollToTop />
+            </>
+          } />
         </Routes>
       </HashRouter>
     </div>

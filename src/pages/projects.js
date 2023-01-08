@@ -1,8 +1,9 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, CheckIcon } from '@heroicons/react/24/outline'
-import tetonImage from '../images/teton.jpg';
-import socialImage from '../images/social.jpeg';
+import Dash from '../components/dash';
+import tetonImage from '../images/TetonSmall.png';
+import socialImage from '../images/SocialMediaSmall.png';
 
 
 const projects = [
@@ -36,14 +37,15 @@ function Projects() {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What I've Been Busy With</h2>
-          <p className="mx-auto mt-3 max-w-2xl text-xl text-gray-500 sm:mt-4">
+          <Dash/>
+          <p className="mx-auto max-w-2xl text-xl text-gray-500">
             A Selection of Personal Projects I've Undertaken in My Free Time.
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-2xl lg:grid-cols-2">
           {projects.map((item, index, array) => (
-            <div key={item.title} className="flex flex-col overflow-hidden rounded-lg shadow-lg">
-              <div className="flex-shrink-0">
+            <div key={item.title} className="border flex flex-col overflow-hidden rounded-lg shadow-lg">
+              <div className="border-b flex-shrink-0">
                 <img className="h-48 w-full object-cover" src={item.imageUrl} alt="" />
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">

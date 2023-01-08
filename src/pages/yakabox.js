@@ -5,6 +5,7 @@ import { ArrowLongLeftIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { HashLink } from "@xzar90/react-router-hash-link";
 import SliderCarousel from "../components/SliderCarousel";
+import Dash from "../components/dash";
 
 import yakabox2 from '../images/yakabox2.png'
 import yakabox3 from '../images/yakabox3.png'
@@ -137,9 +138,10 @@ function Yakabox() {
         </div>
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-prose text-lg prose">
-            <h1 className="mt-2 text-5xl font-bold leading-10 tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className="text-5xl mb-3 font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl bg-clip-text bg-gradient-to-r from-blue-900 to-blue-400">
             My Contribution to the <br/>Development of the <br/>Yakabox Platform
             </h1>
+            <Dash/>
             <p className="text-lg text-gray-500">
             The Yakabox is a secure enterprise productivity solution trusted by the U.S intelligence 
             community. It offers customizable workflows, automated notifications, configurable dashboards, 
