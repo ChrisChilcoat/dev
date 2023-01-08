@@ -46,7 +46,7 @@ function Projects() {
           {projects.map((item, index, array) => (
             <div key={item.title} className="border flex flex-col overflow-hidden rounded-lg shadow-lg">
               <div className="border-b flex-shrink-0">
-                <img className="h-48 w-full object-cover" src={item.imageUrl} alt="" />
+                <img className="h-full w-full object-cover" src={item.imageUrl} alt="" />
               </div>
               <div className="flex flex-1 flex-col justify-between bg-white p-6">
                 <div className="flex-1">

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.0444ee3b.css",
-    "main.js": "/dev/static/js/main.424b754e.js",
+    "main.css": "/dev/static/css/main.3b73f304.css",
+    "main.js": "/dev/static/js/main.d54d22f0.js",
     "static/js/787.b3d79b74.chunk.js": "/dev/static/js/787.b3d79b74.chunk.js",
     "static/media/SocialMediaSmall.png": "/dev/static/media/SocialMediaSmall.9bf0b4b0398b6368bd1f.png",
     "static/media/TetonSmall.png": "/dev/static/media/TetonSmall.bd8375f58b9b063f05cb.png",
@@ -24,12 +24,12 @@
     "static/media/yakabox11.png": "/dev/static/media/yakabox11.21b04d89bd762f391cfc.png",
     "static/media/yakabox16.png": "/dev/static/media/yakabox16.e78e9ca9f2730f54e813.png",
     "index.html": "/dev/index.html",
-    "main.0444ee3b.css.map": "/dev/static/css/main.0444ee3b.css.map",
-    "main.424b754e.js.map": "/dev/static/js/main.424b754e.js.map",
+    "main.3b73f304.css.map": "/dev/static/css/main.3b73f304.css.map",
+    "main.d54d22f0.js.map": "/dev/static/js/main.d54d22f0.js.map",
     "787.b3d79b74.chunk.js.map": "/dev/static/js/787.b3d79b74.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0444ee3b.css",
-    "static/js/main.424b754e.js"
+    "static/css/main.3b73f304.css",
+    "static/js/main.d54d22f0.js"
   ]
 }
