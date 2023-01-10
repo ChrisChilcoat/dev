@@ -12,6 +12,7 @@ import Footer from './pages/footer';
 import Yakabox from './pages/yakabox';
 import Cisobox from './pages/cisobox';
 import Yakadrive from './pages/yakadrive';
+import Testimonial from './pages/testimonial';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -31,6 +32,7 @@ function App() {
             <>
               <Hero />
               <Expertise />
+              <Testimonial />
               <Projects />
               <Work />
               <Contact />
