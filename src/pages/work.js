@@ -17,7 +17,7 @@ const work = [
   {
     title: 'Cisobox',
     href: 'cisobox',
-    description:'Secirity incident managment & reporting software.',
+    description:'Security incident managment & reporting software.',
     imageUrl:CisoboxSmallImage
   },
 ]

@@ -226,7 +226,7 @@ function Yakabox() {
             and user-friendly.
             </p>
 
-            <h3>Summery</h3>
+            <h3>Summary</h3>
             <p>Working at a small software company was a valuable and enriching experience. I had the 
               opportunity to work on a variety of projects and wear many hats, which allowed me to learn 
               a wide range of skills and knowledge. I gained a deep understanding of the product development 

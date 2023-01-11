@@ -152,7 +152,7 @@ function Cisobox() {
             encryption, in-app messaging, customizable dashboards and reports, and compliance with 
             NIST 800-61r2 standards. I had the opportunity to work on this project as part of a team 
             of 4 others, where we dedicated our nights and weekends for a period of 3 months to help 
-            bootstrap its development."
+            bootstrap its development.
             </p>
             
             <SliderCarousel slides={images} />
@@ -221,7 +221,7 @@ function Cisobox() {
               increase in popularity.
             </p>
 
-            <h3>Summery</h3>
+            <h3>Summary</h3>
             <p>
             Working on the Cisobox startup project was a valuable learning experience. I had the 
             chance to work in a fast-paced, agile startup environment and develop a product that 
