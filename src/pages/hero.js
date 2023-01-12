@@ -16,7 +16,7 @@ const scrollToBottom = () => {
 
 function Hero(props) {
   return (
-    <div className={clsx('relative overflow-hidden', themes[`${props.theme}`]['primaryColor'])}>
+    <div className={clsx('relative overflow-hidden', themes[`${props.theme}`]['secondaryColor'])}>
     <div className="mx-auto max-w-7xl">
       <div className={clsx('relative z-10 bg-gradient-to-r pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32', themes[`${props.theme}`]['primaryGradient'])}>
         <svg
