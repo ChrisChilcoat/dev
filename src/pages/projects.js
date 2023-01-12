@@ -35,26 +35,26 @@ function Projects({theme}) {
   return (
     <section className={clsx(themes[`${theme}`]['background'], "relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28")}>
       <div className="absolute inset-0">
-        <div className="h-1/3 bg-white sm:h-2/3" />
+        <div className="h-1/3 bg-white dark:bg-slate-700 sm:h-2/3" />
       </div>
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
-          <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">What I've Been Busy With</h2>
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">What I've Been Busy With</h2>
           <Dash theme={theme} />
-          <p className="mx-auto max-w-2xl text-xl text-gray-500">
+          <p className="mx-auto max-w-2xl text-xl text-gray-500 dark:text-gray-400">
             A Selection of Personal Projects I've Undertaken in My Free Time.
           </p>
         </div>
         <div className="mx-auto mt-12 grid max-w-lg gap-5 lg:max-w-2xl lg:grid-cols-2">
           {projects.map((item, index, array) => (
-            <div key={item.title} className="border flex flex-col overflow-hidden rounded-lg shadow-lg">
-              <div className="border-b flex-shrink-0">
+            <div key={item.title} className="border dark:border-black flex flex-col overflow-hidden rounded-lg shadow-lg">
+              <div className="border-b dark:border-black flex-shrink-0">
                 <img className="h-full w-full object-cover" src={item.imageUrl} alt="" />
               </div>
-              <div className="flex flex-1 flex-col justify-between bg-white p-6">
+              <div className="flex flex-1 flex-col justify-between bg-white dark:bg-black p-6">
                 <div className="flex-1">
                   <span className="mt-2 block">
-                    <p className="text-xl font-semibold text-gray-900">{item.title}</p>
+                    <p className="text-xl font-semibold text-gray-900 dark:text-gray-100">{item.title}</p>
                     <p className="mt-3 text-base text-gray-500">{item.description}</p>
                   </span>
                 </div>
@@ -67,7 +67,7 @@ function Projects({theme}) {
                           : clsx(themes[`${theme}`]['secondaryButton'], 'text-white inline w-full items-center justify-center rounded-md border border-transparent px-3 py-2 mr-2 text-base font-medium') 
                       );
                       return (
-                        <a href={item.href} key={item.href} className={styles}>{item.name}</a>
+                        <a target="_blank" href={item.href} key={item.href} className={styles}>{item.name}</a>
                       )}
                     )}
                   </div>

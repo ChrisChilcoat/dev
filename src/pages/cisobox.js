@@ -18,7 +18,7 @@ const images = [
 function Cisobox({theme}) {
   return (
     <>
-      <div className="relative overflow-hidden bg-white py-16">
+      <div className="relative overflow-hidden bg-white dark:bg-slate-800 py-16 sm:py-24 md:py-32">
         <div className="hidden lg:absolute lg:inset-y-0 lg:block lg:h-full lg:w-full lg:[overflow-anchor:none]">
           <div
             className="relative mx-auto h-full max-w-prose text-lg"
@@ -45,7 +45,7 @@ function Cisobox({theme}) {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-gray-200"
+                    className="text-gray-200 dark:text-black"
                     fill="currentColor"
                   />
                 </pattern>
@@ -77,7 +77,7 @@ function Cisobox({theme}) {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-gray-200"
+                    className="text-gray-200 dark:text-black"
                     fill="currentColor"
                   />
                 </pattern>
@@ -109,7 +109,7 @@ function Cisobox({theme}) {
                     y={0}
                     width={4}
                     height={4}
-                    className="text-gray-200"
+                    className="text-gray-200 dark:text-black"
                     fill="currentColor"
                   />
                 </pattern>
@@ -123,11 +123,11 @@ function Cisobox({theme}) {
           </div>
         </div>
         <div className="relative px-4 sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-prose text-lg prose">
+          <div className="mx-auto max-w-prose text-lg prose prose-zinc dark:prose-invert">
             <h1 className={clsx(themes[`${theme}`]['primaryGradient'], "text-5xl mb-3 py-2 font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl bg-clip-text bg-gradient-to-r")}>
             My Startup Experience <br/>Building the Cisobox
             </h1>
-            <p className="text-lg text-gray-500">
+            <p className="text-lg">
             The CISOBox is a comprehensive case management platform designed for higher education, 
             enterprise, and government CISOs to effectively manage and investigate cyber incidents. 
             It includes a range of features such as granular access controls, two-factor authentication, 

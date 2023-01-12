@@ -2,6 +2,7 @@ import { React, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { HashRouter, Route, Routes, HashLink, Link} from "react-router-dom";
 import UseLocalStorageState from './components/UseLocalStorageState';
+import DarkThemeToggle from "./components/DarkThemeToggle";
 import ThemePicker from "./components/ThemePicker";
 import Navigation from './pages/navigation';
 import Hero from './pages/hero';
@@ -38,6 +39,7 @@ function App() {
               <Contact theme={theme} />
               <Footer theme={theme} />
               <ThemePicker theme={theme} setTheme={setTheme} />
+              <DarkThemeToggle theme={theme} darkMode={darkMode} setDarkMode={setDarkMode} />
               <ScrollToTop />
             </>
           } />
