@@ -38,8 +38,10 @@ function App() {
               <Work theme={theme} />
               <Contact theme={theme} />
               <Footer theme={theme} />
-              <ThemePicker theme={theme} setTheme={setTheme} />
-              <DarkThemeToggle theme={theme} darkMode={darkMode} setDarkMode={setDarkMode} />
+              <span className="invisible sm:visible">
+                <ThemePicker theme={theme} setTheme={setTheme} />
+                <DarkThemeToggle theme={theme} darkMode={darkMode} setDarkMode={setDarkMode} />
+              </span>
               <ScrollToTop />
             </>
           } />
