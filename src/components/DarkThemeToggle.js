@@ -1,6 +1,8 @@
 import { MoonIcon, SunIcon } from '@heroicons/react/20/solid'
 import { themes } from './ThemeData'
 import clsx from 'clsx'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 export default function DarkThemeToggle(props) {
 
@@ -17,16 +19,18 @@ export default function DarkThemeToggle(props) {
 
   return (
     <div className="fixed top-[70px] right-5 z-40">
+      <Tippy content={(props.darkMode) ? 'Light' : 'Dark'} delay={[500, 0]}  placement='left'>
         <button 
           className={`${menu.button}`}
           onClick={handleButtonClick}
         >
           {(props.darkMode) ?
-            <MoonIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
-          :
             <SunIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
+          :
+            <MoonIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
           }
-        </button>  
+        </button> 
+      </Tippy>
     </div>
   )
 }

@@ -3,6 +3,8 @@ import { Fragment, useEffect, useRef, useState } from 'react'
 import { PaintBrushIcon } from '@heroicons/react/20/solid'
 import { themes } from './ThemeData'
 import clsx from 'clsx'
+import Tippy from '@tippyjs/react';
+import 'tippy.js/dist/tippy.css';
 
 export default function ThemePicker(props) {
 
@@ -20,6 +22,7 @@ export default function ThemePicker(props) {
   const handleUpdateTheme = (e) => {
     e.preventDefault();
     e.stopPropagation();  
+    this.blur();
     props.setTheme(e.target.dataset.color);
   }
 
@@ -28,9 +31,11 @@ export default function ThemePicker(props) {
       <Menu>
       {({ open, active }) => (
         <>
-        <Menu.Button className={`${open ? 'rounded-r-full' : 'rounded-full'} ${menu.button}`}>
-          <PaintBrushIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
-        </Menu.Button>
+        <Tippy content="Theme" delay={[500, 0]} placement='left'>
+          <Menu.Button className={`${open ? 'rounded-r-full' : 'rounded-full'} ${menu.button}`}>
+            <PaintBrushIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
+          </Menu.Button>
+        </Tippy>
         <Menu.Items className={clsx(themes[`${props.theme}`]['backgroundDark'], "fixed flex flex-row top-5 right-16 rounded-l-full shadow-xl")}>
           <Menu.Item>
               <button 
