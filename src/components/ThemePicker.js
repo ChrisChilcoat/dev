@@ -22,7 +22,6 @@ export default function ThemePicker(props) {
   const handleUpdateTheme = (e) => {
     e.preventDefault();
     e.stopPropagation();  
-    this.blur();
     props.setTheme(e.target.dataset.color);
   }
 
