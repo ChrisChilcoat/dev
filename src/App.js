@@ -1,6 +1,8 @@
 import { React, useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import { HashRouter, Route, Routes, HashLink, Link} from "react-router-dom";
+import UseLocalStorageState from './components/UseLocalStorageState';
+import ThemePicker from "./components/ThemePicker";
 import Navigation from './pages/navigation';
 import Hero from './pages/hero';
 import Expertise from './pages/expertise';
@@ -11,7 +13,6 @@ import Footer from './pages/footer';
 import Yakabox from './pages/yakabox';
 import Cisobox from './pages/cisobox';
 import Testimonial from './pages/testimonial';
-import ThemePicker from "./components/ThemePicker";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -20,49 +21,50 @@ function ScrollToTop() {
 }
 
 function App() {  
+  const [theme, setTheme] = UseLocalStorageState('theme', 'blue');
+  const [darkMode, setDarkMode] = UseLocalStorageState('darkMode', false);
+
   return (
+    <div className={darkMode ? 'dark' : 'light'}>
       <HashRouter>
         <Routes>
-          <Route path="/" element={
+          <Route path="/" exact element={
             <>
-              <Hero />
-              <Expertise />
-              <Testimonial />
-              <Projects />
-              <Work />
-              <Contact />
-              <Footer />
+              <Hero theme={theme} />
+              <Expertise theme={theme} />
+              <Testimonial theme={theme} />
+              <Projects theme={theme} />
+              <Work theme={theme} />
+              <Contact theme={theme} />
+              <Footer theme={theme} />
+              <ThemePicker theme={theme} setTheme={setTheme} />
               <ScrollToTop />
             </>
           } />
-          <Route path="yakabox" element={
+          <Route path="yakabox" exact element={
             <>
-              <Navigation />
-              <Yakabox />
-              <Contact />
-              <Footer />
+              <Navigation theme={theme} />
+              <Yakabox theme={theme} />
+              <Contact theme={theme} />
+              <Footer theme={theme} />
+              <div className="m-t-50">
+                <ThemePicker theme={theme} setTheme={setTheme} />
+              </div>
               <ScrollToTop />
             </>
           } />
-          <Route path="cisobox" element={
+          <Route path="cisobox" exact element={
             <>
-              <Navigation />
-              <Cisobox />
-              <Contact />
-              <Footer />
-              <ScrollToTop />
-            </>
-          } />
-          <Route path="contact" element={
-            <>
-              <Navigation />
-              <Contact />
-              <Footer />
+              <Navigation theme={theme} />
+              <Cisobox theme={theme} />
+              <Contact theme={theme} />
+              <Footer theme={theme} />
               <ScrollToTop />
             </>
           } />
         </Routes>
       </HashRouter>
+    </div>
   );
 }
 

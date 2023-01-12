@@ -5,7 +5,9 @@ import { ArrowLongLeftIcon } from "@heroicons/react/24/solid";
 import { Link } from "react-router-dom";
 import { HashLink } from "@xzar90/react-router-hash-link";
 import SliderCarousel from "../components/SliderCarousel";
+import { themes } from "../components/ThemeData";
 import Dash from "../components/dash";
+import clsx from "clsx";
 
 import yakabox2 from '../images/yakabox2.png'
 import yakabox3 from '../images/yakabox3.png'
@@ -29,7 +31,7 @@ const images = [
   { imageDesc: 'Yakabox', imageUrl: yakabox8},
 ]
 
-function Yakabox() {
+function Yakabox({theme}) {
   return (
     <>
       <div className="relative overflow-hidden bg-white py-16">
@@ -136,12 +138,11 @@ function Yakabox() {
             </svg>
           </div>
         </div>
-        <div className="relative px-4 sm:px-6 lg:px-8">
+        <div className="relative px-4 sm:px-6 lg:px-8 ">
           <div className="mx-auto max-w-prose text-lg prose">
-            <h1 className="text-5xl mb-3 font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl bg-clip-text bg-gradient-to-r from-blue-900 to-blue-400">
+            <h1 className={clsx(themes[`${theme}`]['primaryGradient'], "text-5xl mb-3 py-2 font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl bg-clip-text bg-gradient-to-r")}>
             My Contribution to the <br/>Development of the <br/>Yakabox Platform
             </h1>
-            <Dash/>
             <p className="text-lg text-gray-500">
             The Yakabox is a secure enterprise productivity solution trusted by the U.S intelligence 
             community. It offers customizable workflows, automated notifications, configurable dashboards, 
@@ -159,7 +160,7 @@ function Yakabox() {
               <li>Adoble XD</li>
             </ul>
 
-            <h3>My Roles in Development Process</h3>
+            <h3>My Roles in the Development Process</h3>
             <ul role="list" className="grid grid-cols-2 gap-x-4">
               <li>UX Research</li>
               <li>UI Design</li>

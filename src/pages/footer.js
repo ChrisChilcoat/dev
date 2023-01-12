@@ -1,6 +1,8 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon, CheckIcon } from '@heroicons/react/24/outline'
+import clsx from 'clsx';
+import { themes } from '../components/ThemeData';
 
 const navigation = {
   social: [
@@ -29,9 +31,10 @@ const navigation = {
   ],
 }
 
-function Footer() {
+function Footer({theme}) {
   return (
-    <div className="border-t border-gray-200 bg-gray-50">
+    
+    <footer className={clsx(themes[`${theme}`]['background'], "border-t")}>
       <div className="p-8 md:flex md:items-center md:justify-between">
         <div className="flex space-x-6 md:order-2">
           {navigation.social.map((item) => (
@@ -45,7 +48,7 @@ function Footer() {
           &copy; {new Date().getFullYear()} Chris Chilcoat. All rights reserved. But seriously, don't steal my stuff.
         </p>
       </div>
-    </div>
+    </footer>
   )
 }
 

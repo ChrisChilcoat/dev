@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.b70312d1.css",
-    "main.js": "/dev/static/js/main.aa021bfe.js",
+    "main.css": "/dev/static/css/main.ec5bb3b8.css",
+    "main.js": "/dev/static/js/main.e2a9c60c.js",
     "static/js/787.b3d79b74.chunk.js": "/dev/static/js/787.b3d79b74.chunk.js",
     "static/media/SocialMediaSmall.png": "/dev/static/media/SocialMediaSmall.9bf0b4b0398b6368bd1f.png",
     "static/media/TetonSmall.png": "/dev/static/media/TetonSmall.bd8375f58b9b063f05cb.png",
@@ -16,7 +16,6 @@
     "static/media/yakabox7.png": "/dev/static/media/yakabox7.78fd84bddecd546fc972.png",
     "static/media/yakabox2.png": "/dev/static/media/yakabox2.39b3236f3279490effae.png",
     "static/media/yakabox6.png": "/dev/static/media/yakabox6.39b3236f3279490effae.png",
-    "static/media/yakabox14.png": "/dev/static/media/yakabox14.6ddcd0c5a3b0947c6f43.png",
     "static/media/yakabox10.png": "/dev/static/media/yakabox10.759215ecd4562eba76a8.png",
     "static/media/yakabox4.png": "/dev/static/media/yakabox4.e16595cb07b8186bf501.png",
     "static/media/yakabox8.png": "/dev/static/media/yakabox8.a8c17eb7c21f1f46620b.png",
@@ -25,12 +24,12 @@
     "static/media/yakabox16.png": "/dev/static/media/yakabox16.e78e9ca9f2730f54e813.png",
     "static/media/will.jpg": "/dev/static/media/will.a0b663061ee3c2bc5983.jpg",
     "index.html": "/dev/index.html",
-    "main.b70312d1.css.map": "/dev/static/css/main.b70312d1.css.map",
-    "main.aa021bfe.js.map": "/dev/static/js/main.aa021bfe.js.map",
+    "main.ec5bb3b8.css.map": "/dev/static/css/main.ec5bb3b8.css.map",
+    "main.e2a9c60c.js.map": "/dev/static/js/main.e2a9c60c.js.map",
     "787.b3d79b74.chunk.js.map": "/dev/static/js/787.b3d79b74.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b70312d1.css",
-    "static/js/main.aa021bfe.js"
+    "static/css/main.ec5bb3b8.css",
+    "static/js/main.e2a9c60c.js"
   ]
 }

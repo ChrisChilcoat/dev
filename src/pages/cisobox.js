@@ -1,39 +1,21 @@
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon, CheckIcon } from "@heroicons/react/24/outline";
-import { ArrowLongLeftIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
-import { HashLink } from "@xzar90/react-router-hash-link";
 import SliderCarousel from "../components/SliderCarousel";
-
-import yakabox2 from '../images/yakabox2.png'
-import yakabox3 from '../images/yakabox3.png'
-import yakabox4 from '../images/yakabox4.png'
-import yakabox5 from '../images/yakabox5.png'
-import yakabox6 from '../images/yakabox6.png'
-import yakabox7 from '../images/yakabox7.png'
-import yakabox8 from '../images/yakabox8.png'
+import clsx from "clsx";
+import { themes } from "../components/ThemeData";
 import yakabox9 from '../images/yakabox9.png'
 import yakabox10 from '../images/yakabox10.png'
 import yakabox11 from '../images/yakabox11.png'
 import yakabox12 from '../images/yakabox12.png'
 import yakabox13 from '../images/yakabox13.png'
-import yakabox14 from '../images/yakabox14.png'
-import yakabox16 from '../images/yakabox16.png'
-import yakabox17 from '../images/yakabox17.png'
-import yakabox19 from '../images/yakabox19.png'
 
 const images = [
-
   { imageDesc: 'Yakabox', imageUrl: yakabox10},
   { imageDesc: 'Yakabox', imageUrl: yakabox9},
   { imageDesc: 'Yakabox', imageUrl: yakabox11},
   { imageDesc: 'Yakabox', imageUrl: yakabox13},
   { imageDesc: 'Yakabox', imageUrl: yakabox12},
-
 ]
 
-function Cisobox() {
+function Cisobox({theme}) {
   return (
     <>
       <div className="relative overflow-hidden bg-white py-16">
@@ -142,7 +124,7 @@ function Cisobox() {
         </div>
         <div className="relative px-4 sm:px-6 lg:px-8">
           <div className="mx-auto max-w-prose text-lg prose">
-            <h1 className="mt-2 text-5xl font-bold leading-10 tracking-tight text-gray-900 sm:text-6xl">
+            <h1 className={clsx(themes[`${theme}`]['primaryGradient'], "text-5xl mb-3 py-2 font-extrabold tracking-tight text-transparent sm:text-5xl md:text-6xl bg-clip-text bg-gradient-to-r")}>
             My Startup Experience <br/>Building the Cisobox
             </h1>
             <p className="text-lg text-gray-500">
@@ -164,7 +146,7 @@ function Cisobox() {
               <li>XHTML</li>
             </ul>
 
-            <h3>My Roles in Development Process</h3>
+            <h3>My Roles in the Development Process</h3>
             <ul role="list" className="grid grid-cols-2 gap-x-4">
               <li>UX Design</li>
               <li>UI Design</li>

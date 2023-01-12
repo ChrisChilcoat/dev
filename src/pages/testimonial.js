@@ -1,9 +1,11 @@
-import Dash from '../components/dash'
 import WillImage from '../images/will.jpg';
+import Dash from '../components/dash';
+import { themes } from '../components/ThemeData';
+import clsx from 'clsx';
 
-export default function Testimonial() {
+export default function Testimonial({theme}) {
   return (
-    <section className="overflow-hidden bg-gray-50 py-12 md:py-20 lg:py-24">
+    <section className={clsx(themes[`${theme}`]['background'], "overflow-hidden py-12 md:py-20 lg:py-24")}>
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
         <svg
           className="absolute top-full right-full translate-x-1/3 -translate-y-1/4 transform lg:translate-x-1/2 xl:-translate-y-1/2"
@@ -33,7 +35,7 @@ export default function Testimonial() {
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Insights from Colleagues</h2>
-            <Dash/>
+            <Dash theme={theme} />
             <p className="mx-auto max-w-2xl text-xl text-gray-500">
               See What folks are Saying About Me!
             </p>
@@ -56,7 +58,7 @@ export default function Testimonial() {
                 <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
                   <div className="text-base font-medium text-gray-900">Will Bondie</div>
 
-                  <svg className="mx-1 hidden h-5 w-5 text-blue-600 md:block" fill="currentColor" viewBox="0 0 20 20">
+                  <svg className={clsx(themes[`${theme}`]['textColor'], "mx-1 hidden h-5 w-5 md:block")} fill="currentColor" viewBox="0 0 20 20">
                     <path d="M11 0h3L9 20H6l5-20z" />
                   </svg>
 

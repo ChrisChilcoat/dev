@@ -3,6 +3,8 @@ import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { DocumentIcon } from '@heroicons/react/24/solid'
 import { HashLink } from '@xzar90/react-router-hash-link';
+import { themes } from '../components/ThemeData';
+import clsx from 'clsx';
 
 const scrollToBottom = () => {
   window.scroll({
@@ -12,13 +14,13 @@ const scrollToBottom = () => {
   });
 }
 
-function Hero() {
+function Hero(props) {
   return (
-    <div className="relative overflow-hidden bg-cyan-500">
+    <div className={clsx('relative overflow-hidden', themes[`${props.theme}`]['primaryColor'])}>
     <div className="mx-auto max-w-7xl">
-      <div className="relative z-10 bg-gradient-to-r from-cyan-500 to-blue-500 pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32">
+      <div className={clsx('relative z-10 bg-gradient-to-r pb-8 sm:pb-16 md:pb-20 lg:w-full lg:max-w-2xl lg:pb-28 xl:pb-32', themes[`${props.theme}`]['primaryGradient'])}>
         <svg
-          className="absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform text-blue-500 lg:block"
+          className={clsx('absolute inset-y-0 right-0 hidden h-full w-48 translate-x-1/2 transform lg:block', themes[`${props.theme}`]['textColor'])}
           fill="currentColor"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
@@ -42,19 +44,22 @@ function Hero() {
             <h1 className="font-bold tracking-tight text-white drop-shadow-md">
               <span className="text-3xl sm:text-4xl bold md:text-5xl block xl:inline mt-3 sm:mt-5 md:mt-5">UI Designer & <br/>Front-end Developer</span>
             </h1>
-            <span class="inline-flex m-auto w-12 h-1 bg-gradient-to-r rounded mt-5 from-blue-500 to-blue-600"></span>
+            <span class={clsx(themes[`${props.theme}`]['secondaryGradient'], "inline-flex m-auto w-12 h-1 bg-gradient-to-r rounded mt-5")}></span>
             <p className=" text-base text-white opacity-80 drop-shadow-md sm:mx-auto  mt-3 sm:mt-3 sm:max-w-xl sm:text-lg md:mt-3 md:text-xl lg:mx-0">
             Greetings, I'm Chris, and I specialize in crafting <br/>front-ends for large enterprise web applications.
             </p>
-            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
+            <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start" >
               <div className="rounded-md shadow">
-                <a target="_blank" href="https://drive.google.com/file/d/18HFQtope2psoP_OOmtgXrAPtaA_UsIsK/view" className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 px-7 py-2 text-base font-medium text-white hover:bg-blue-700 md:py-2 md:px-8 md:text-lg">
+                <a 
+                  target="_blank" 
+                  href="https://drive.google.com/file/d/18HFQtope2psoP_OOmtgXrAPtaA_UsIsK/view" 
+                  className={clsx(themes[`${props.theme}`]['primaryButton'], "flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 hover:bg-blue-700 px-7 py-2 text-base font-medium text-white md:py-2 md:px-8 md:text-lg")}>
                   <DocumentIcon className="h-4 w-4 mr-2" aria-hidden="true" /> 
-                  Resume
+                  résumé
                 </a>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-              <button onClick={() => scrollToBottom()} className="flex w-full items-center justify-center rounded-md border border-transparent bg-blue-100 px-7 py-2 text-base font-medium text-blue-700 hover:bg-blue-200 md:py-2 md:px-8 md:text-lg">Let's Talk!</button>
+              <button onClick={() => scrollToBottom()} className={clsx(themes[`${props.theme}`]['secondaryButton'], "flex w-full items-center justify-center rounded-md border border-transparent px-7 py-2 text-base font-medium md:py-2 md:px-8 md:text-lg")}>Let's Talk!</button>
               </div>
             </div>
           </div>
