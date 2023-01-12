@@ -47,9 +47,6 @@ function App() {
               <Yakabox theme={theme} />
               <Contact theme={theme} />
               <Footer theme={theme} />
-              <div className="m-t-50">
-                <ThemePicker theme={theme} setTheme={setTheme} />
-              </div>
               <ScrollToTop />
             </>
           } />
