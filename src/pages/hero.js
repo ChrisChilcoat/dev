@@ -1,6 +1,8 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import MeImage from '../images/me.jpeg';
+import WillImage from '../images/will.jpg';
 import { DocumentIcon } from '@heroicons/react/24/solid'
 import { HashLink } from '@xzar90/react-router-hash-link';
 import { themes } from '../components/ThemeData';
@@ -41,8 +43,8 @@ function Hero(props) {
         </div>
         <main className="mx-auto mt-10 max-w-7xl px-4 sm:mt-12 sm:px-6 md:mt-16 lg:mt-20 lg:px-8 xl:mt-28">
           <div className="sm:text-center lg:text-left">
-            <h1 className="font-bold tracking-tight text-white drop-shadow-md">
-              <span className="text-3xl sm:text-4xl bold md:text-5xl block xl:inline mt-3 sm:mt-5 md:mt-5">UI Designer & <br/>Front-end Developer</span>
+            <h1 className="font-bold tracking-tight text-white drop-shadow-md font-playfair">
+              <span className="text-3xl sm:text-4xl bold md:text-5xl block xl:inline mt-3 sm:mt-5 md:mt-5 font-playfair">UI Designer & <br/>Front-end Developer</span>
             </h1>
             <span class={clsx(themes[`${props.theme}`]['secondaryGradient'], "inline-flex m-auto w-12 h-1 bg-gradient-to-r rounded mt-5")}></span>
             <p className=" text-base text-white opacity-80 drop-shadow-md sm:mx-auto  mt-3 sm:mt-3 sm:max-w-xl sm:text-lg md:mt-3 md:text-xl lg:mx-0">
@@ -69,8 +71,8 @@ function Hero(props) {
     <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
       <img
         className="h-56 w-full object-cover sm:h-72 md:h-96 lg:h-full lg:w-full"
-        src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80"
-        alt=""
+        src={MeImage}
+        alt="Chris Chilcoat"
       />
     </div>
   </div>

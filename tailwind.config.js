@@ -12,7 +12,7 @@ module.exports = {
   extend: {
     fontFamily: {
       chivo: ['"Chivo"', ...defaultTheme.fontFamily.sans],
-      playfair: ['"Playfair Display"', ...defaultTheme.fontFamily.serif]
+      playfair: ['"Playfair"', ...defaultTheme.fontFamily.serif]
     },
     animation: {
       fadeIn: "fadeIn 2s ease-in forwards"
