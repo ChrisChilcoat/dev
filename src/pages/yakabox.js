@@ -176,7 +176,7 @@ function Yakabox({theme}) {
               interact with the product. This included conducting user
               interviews and surveys, observing user behavior through usability
               testing and focus groups, and analyzing usage data and customer
-              feedback. The goal this research was to understand the needs,
+              feedback. The goal of this research was to understand the needs,
               motivations, and pain points of the users, and to use this
               information to inform the design and development of the product.
               My findings were used to inform the development of new features
