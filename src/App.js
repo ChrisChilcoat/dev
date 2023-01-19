@@ -23,7 +23,7 @@ function ScrollToTop() {
 
 function App() {  
   const [theme, setTheme] = UseLocalStorageState('theme', 'blue');
-  const [darkMode, setDarkMode] = UseLocalStorageState('darkMode', false);
+  const [darkMode, setDarkMode] = UseLocalStorageState('darkMode', true);
 
   return (
     <div className={darkMode ? 'dark' : 'light'}>

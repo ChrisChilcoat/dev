@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
-import MeImage from '../images/me.jpeg';
+import MeImage from '../images/me.jpg';
 import WillImage from '../images/will.jpg';
 import { DocumentIcon } from '@heroicons/react/24/solid'
 import { HashLink } from '@xzar90/react-router-hash-link';
