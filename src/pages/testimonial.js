@@ -1,9 +1,14 @@
+import { useContext } from 'react';
 import WillImage from '../images/will.jpg';
 import Dash from '../components/dash';
 import { themes } from '../components/ThemeData';
 import clsx from 'clsx';
+import { ThemeContext } from '../App';
 
-export default function Testimonial({theme}) {
+export default function Testimonial() {
+  
+  const theme = useContext(ThemeContext)
+
   return (
     <section className={clsx(themes[`${theme}`]['background'], "overflow-hidden py-12 md:py-20 lg:py-24")}>
       <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
@@ -35,7 +40,7 @@ export default function Testimonial({theme}) {
         <div className="relative mx-auto max-w-7xl">
           <div className="text-center">
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">Insights from Colleagues</h2>
-            <Dash theme={theme} />
+            <Dash />
             <p className="mx-auto max-w-2xl text-xl text-gray-500">
               See What folks are Saying About Me!
             </p>

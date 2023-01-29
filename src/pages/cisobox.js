@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import SliderCarousel from "../components/SliderCarousel";
 import clsx from "clsx";
 import { themes } from "../components/ThemeData";
@@ -6,6 +7,7 @@ import yakabox10 from '../images/yakabox10.png'
 import yakabox11 from '../images/yakabox11.png'
 import yakabox12 from '../images/yakabox12.png'
 import yakabox13 from '../images/yakabox13.png'
+import { ThemeContext } from "../App";
 
 const images = [
   { imageDesc: 'Yakabox', imageUrl: yakabox10},
@@ -15,7 +17,8 @@ const images = [
   { imageDesc: 'Yakabox', imageUrl: yakabox12},
 ]
 
-function Cisobox({theme}) {
+function Cisobox() {
+  const theme = useContext(ThemeContext)
   return (
     <>
       <div className="relative overflow-hidden bg-white dark:bg-slate-800 py-16 sm:py-24 md:py-32">

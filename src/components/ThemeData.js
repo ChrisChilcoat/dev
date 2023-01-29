@@ -65,7 +65,7 @@ const themes = {
     secondaryColor: 'bg-lime-500',
     primaryGradient: 'from-orange-500 to-yellow-400',
     secondaryGradient: 'from-orange-500 to-yellow-600',
-    primaryButton: 'bg-yellow-400 hover:bg-yellow-500',
+    primaryButton: 'bg-yellow-500 hover:bg-yellow-600',
     secondaryButton: 'bg-yellow-100 text-yellow-700 hover:bg-yellow-200',
     textColor: 'text-yellow-500',
     background: 'bg-yellow-50 dark:bg-slate-800 border-yellow-200 dark:border-slate-900',

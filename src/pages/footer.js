@@ -1,8 +1,7 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon, CheckIcon } from '@heroicons/react/24/outline'
-import clsx from 'clsx';
-import { themes } from '../components/ThemeData';
+import { useContext } from 'react'
+import { themes } from '../components/ThemeData'
+import clsx from 'clsx'
+import { ThemeContext } from '../App';
 
 const navigation = {
   social: [
@@ -31,9 +30,9 @@ const navigation = {
   ],
 }
 
-function Footer({theme}) {
-  return (
-    
+function Footer() {
+  const theme = useContext(ThemeContext)
+  return (    
     <footer className={clsx(themes[`${theme}`]['background'], "border-t")}>
       <div className="p-8 md:flex md:items-center md:justify-between">
         <div className="flex space-x-6 md:order-2">

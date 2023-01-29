@@ -3,7 +3,7 @@ import { useState } from 'react'
 import PropTypes from 'prop-types';
 
 SliderCarousel.propTypes = {
-  slides: PropTypes.array
+  slides: PropTypes.array.isRequired
 }
 SliderCarousel.defaultProps = {
   slides: []

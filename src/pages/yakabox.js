@@ -1,22 +1,14 @@
-import { Fragment } from "react";
-import { Popover, Transition } from "@headlessui/react";
-import { Bars3Icon, XMarkIcon, CheckIcon } from "@heroicons/react/24/outline";
-import { ArrowLongLeftIcon } from "@heroicons/react/24/solid";
-import { Link } from "react-router-dom";
-import { HashLink } from "@xzar90/react-router-hash-link";
+import { useContext } from "react";
 import SliderCarousel from "../components/SliderCarousel";
 import { themes } from "../components/ThemeData";
-import Dash from "../components/dash";
 import clsx from "clsx";
-
+import { ThemeContext } from "../App";
 import yakabox2 from '../images/yakabox2.png'
 import yakabox3 from '../images/yakabox3.png'
 import yakabox4 from '../images/yakabox4.png'
 import yakabox5 from '../images/yakabox5.png'
-import yakabox6 from '../images/yakabox6.png'
 import yakabox7 from '../images/yakabox7.png'
 import yakabox8 from '../images/yakabox8.png'
-import yakabox16 from '../images/yakabox16.png'
 import yakabox17 from '../images/yakabox17.png'
 import yakabox19 from '../images/yakabox19.png'
 
@@ -31,7 +23,8 @@ const images = [
   { imageDesc: 'Yakabox', imageUrl: yakabox8},
 ]
 
-function Yakabox({theme}) {
+function Yakabox() {
+  const theme = useContext(ThemeContext)
   return (
     <>
       <div className="relative overflow-hidden bg-white dark:bg-slate-800 py-16 sm:py-24 md:py-32">

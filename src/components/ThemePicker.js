@@ -1,15 +1,17 @@
-import { Menu, Transition } from '@headlessui/react'
-import { Fragment, useEffect, useRef, useState } from 'react'
+import { useContext } from 'react'
+import { Menu } from '@headlessui/react'
 import { PaintBrushIcon } from '@heroicons/react/20/solid'
 import { themes } from './ThemeData'
 import clsx from 'clsx'
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { ThemeContext } from '../App'
 
 export default function ThemePicker(props) {
+  const theme = useContext(ThemeContext)
 
   const menu = {
-    button: clsx(themes[`${props.theme}`]['backgroundDark'], "flex w-full items-center justify-center shadow-lg text-base font-medium md:text-lg"),
+    button: clsx(themes[`${theme}`]['backgroundDark'], "flex w-full items-center justify-center shadow-lg text-base font-medium md:text-lg"),
     items: '',
     item: '',
     itemButton: ''
@@ -32,10 +34,10 @@ export default function ThemePicker(props) {
         <>
         <Tippy content="Theme" delay={[500, 0]} placement='left'>
           <Menu.Button className={`${open ? 'rounded-r-full' : 'rounded-full'} ${menu.button}`}>
-            <PaintBrushIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
+            <PaintBrushIcon className={clsx(themes[`${theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
           </Menu.Button>
         </Tippy>
-        <Menu.Items className={clsx(themes[`${props.theme}`]['backgroundDark'], "fixed flex flex-row top-5 right-16 rounded-l-full shadow-xl")}>
+        <Menu.Items className={clsx(themes[`${theme}`]['backgroundDark'], "fixed flex flex-row top-5 right-16 rounded-l-full shadow-xl")}>
           <Menu.Item>
               <button 
                 className={clsx(themes['red']['primaryButton'], "rounded-full w-7 h-7 m-2")} 

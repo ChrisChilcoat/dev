@@ -1,9 +1,8 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import { useContext } from 'react'
 import { HashLink } from '@xzar90/react-router-hash-link'
 import clsx from 'clsx'
 import { themes } from '../components/ThemeData'
+import { ThemeContext } from '../App'
 
 const scrollToBottom = () => {
   window.scroll({
@@ -13,7 +12,8 @@ const scrollToBottom = () => {
   });
 }
 
-function Navigation({theme}) {
+function Navigation() {
+  const theme = useContext(ThemeContext)
   return (
   <div className={clsx(themes[`${theme}`]['secondaryColor'], "relative")}>
     <div className="mx-auto max-w-7xl relative">

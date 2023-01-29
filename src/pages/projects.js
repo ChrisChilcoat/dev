@@ -1,12 +1,10 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon, CheckIcon } from '@heroicons/react/24/outline'
+import { useContext } from 'react'
 import { themes } from '../components/ThemeData';
 import Dash from '../components/dash';
-
 import tetonImage from '../images/TetonSmall.png';
 import socialImage from '../images/SocialMediaSmall.png';
 import clsx from 'clsx';
+import { ThemeContext } from '../App';
 
 
 const projects = [
@@ -31,7 +29,10 @@ const projects = [
   },
 ]
 
-function Projects({theme}) {
+function Projects() {
+
+  const theme = useContext(ThemeContext)
+
   return (
     <section className={clsx(themes[`${theme}`]['background'], "relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28")}>
       <div className="absolute inset-0">
@@ -40,7 +41,7 @@ function Projects({theme}) {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">What I've Been Busy With</h2>
-          <Dash theme={theme} />
+          <Dash />
           <p className="mx-auto max-w-2xl text-xl text-gray-500 dark:text-gray-400">
             A Selection of Personal Projects I've Undertaken in My Free Time.
           </p>

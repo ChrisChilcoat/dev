@@ -1,7 +1,9 @@
+import { useContext } from 'react';
 import { CheckIcon } from '@heroicons/react/24/outline'
 import { themes } from '../components/ThemeData';
 import Dash from '../components/dash';
 import clsx from 'clsx';
+import { ThemeContext } from '../App';
 
 const areas = [
   {
@@ -43,13 +45,16 @@ const areas = [
   },
 ]
 
-function Expertise({theme}) {
+function Expertise() {
+
+  const theme = useContext(ThemeContext)
+
   return (
     <div className="bg-white dark:bg-slate-700">
       <div className="mx-auto max-w-7xl py-24 px-6 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-3xl text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">My Areas of Specialization </h2> 
-          <Dash theme={theme} />
+          <Dash />
           <p className="mx-auto max-w-xl text-lg leading-8 text-gray-600 dark:text-gray-400">
             As a multi-disciplinary UI designer and front-end developer, <br/>I have a broad range of skills and expertise.          </p>
         </div>

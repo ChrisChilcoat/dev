@@ -1,6 +1,5 @@
-import { React, useEffect, useState } from "react";
-import { useLocation } from "react-router-dom";
-import { HashRouter, Route, Routes, HashLink, Link} from "react-router-dom";
+import { createContext } from "react";
+import { HashRouter, Route, Routes} from "react-router-dom";
 import UseLocalStorageState from './components/UseLocalStorageState';
 import DarkThemeToggle from "./components/DarkThemeToggle";
 import ThemePicker from "./components/ThemePicker";
@@ -14,59 +13,59 @@ import Footer from './pages/footer';
 import Yakabox from './pages/yakabox';
 import Cisobox from './pages/cisobox';
 import Testimonial from './pages/testimonial';
+import ScrollToTop from "./components/ScrollToTop";
 
-function ScrollToTop() {
-  const { pathname } = useLocation();
-  useEffect(() => { window.scrollTo(0, 0); }, [pathname]);
-  return null;
-}
+const ThemeContext = createContext()
 
-function App() {  
-  const [theme, setTheme] = UseLocalStorageState('theme', 'blue');
-  const [darkMode, setDarkMode] = UseLocalStorageState('darkMode', true);
+export default function App() {  
+
+  const [theme, setTheme] = UseLocalStorageState('theme', 'blue')
+  const [darkMode, setDarkMode] = UseLocalStorageState('darkMode', true)
 
   return (
     <div className={darkMode ? 'dark' : 'light'}>
-      <HashRouter>
-        <Routes>
-          <Route path="/" exact element={
-            <>
-              <Hero theme={theme} />
-              <Expertise theme={theme} />
-              <Testimonial theme={theme} />
-              <Projects theme={theme} />
-              <Work theme={theme} />
-              <Contact theme={theme} />
-              <Footer theme={theme} />
-              <span className="invisible sm:visible">
-                <ThemePicker theme={theme} setTheme={setTheme} />
-                <DarkThemeToggle theme={theme} darkMode={darkMode} setDarkMode={setDarkMode} />
-              </span>
-              <ScrollToTop />
-            </>
-          } />
-          <Route path="yakabox" exact element={
-            <>
-              <Navigation theme={theme} />
-              <Yakabox theme={theme} />
-              <Contact theme={theme} />
-              <Footer theme={theme} />
-              <ScrollToTop />
-            </>
-          } />
-          <Route path="cisobox" exact element={
-            <>
-              <Navigation theme={theme} />
-              <Cisobox theme={theme} />
-              <Contact theme={theme} />
-              <Footer theme={theme} />
-              <ScrollToTop />
-            </>
-          } />
-        </Routes>
-      </HashRouter>
+      <ThemeContext.Provider value={theme}>
+        <HashRouter>
+          <Routes>
+            <Route path="/" exact element={
+              <>
+                <Hero/>
+                <Expertise/>
+                <Testimonial/>
+                <Projects/>
+                <Work/>
+                <Contact/>
+                <Footer/>
+                <span className="invisible sm:visible">
+                  <ThemePicker setTheme={setTheme} />
+                  <DarkThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+                </span>
+                <ScrollToTop/>
+              </>
+            } />
+            <Route path="yakabox" exact element={
+              <>
+                <Navigation/>
+                <Yakabox/>
+                <Contact/>
+                <Footer/>
+                <ScrollToTop/>
+              </>
+            } />
+            <Route path="cisobox" exact element={
+              <>
+                <Navigation/>
+                <Cisobox/>
+                <Contact/>
+                <Footer/>
+                <ScrollToTop/>
+              </>
+            } />
+          </Routes>
+        </HashRouter>
+      </ThemeContext.Provider>
     </div>
   );
 }
 
-export default App;
+export { ThemeContext };

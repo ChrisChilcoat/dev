@@ -1,13 +1,17 @@
+import { useContext } from 'react';
 import { MoonIcon, SunIcon } from '@heroicons/react/20/solid'
 import { themes } from './ThemeData'
 import clsx from 'clsx'
 import Tippy from '@tippyjs/react';
 import 'tippy.js/dist/tippy.css';
+import { ThemeContext } from '../App';
 
 export default function DarkThemeToggle(props) {
 
+  const theme = useContext(ThemeContext)
+
   const menu = {
-    button: clsx(themes[`${props.theme}`]['backgroundDark'], "flex w-full items-center justify-center shadow-lg rounded-full text-base font-medium md:text-lg"),
+    button: clsx(themes[`${theme}`]['backgroundDark'], "flex w-full items-center justify-center shadow-lg rounded-full text-base font-medium md:text-lg"),
     items: '',
     item: '',
     itemButton: ''
@@ -25,9 +29,9 @@ export default function DarkThemeToggle(props) {
           onClick={handleButtonClick}
         >
           {(props.darkMode) ?
-            <SunIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
+            <SunIcon className={clsx(themes[`${theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
           :
-            <MoonIcon className={clsx(themes[`${props.theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
+            <MoonIcon className={clsx(themes[`${theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
           }
         </button> 
       </Tippy>

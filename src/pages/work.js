@@ -1,13 +1,11 @@
-import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
-import { Bars3Icon, XMarkIcon, CheckIcon } from '@heroicons/react/24/outline'
-import { Link } from "react-router-dom" 
+import { useContext } from 'react'
 import clsx from 'clsx';
 import { themes } from '../components/ThemeData';
 import { HashLink } from '@xzar90/react-router-hash-link'
 import Dash from '../components/dash'
 import YakaboxSmallImage from '../images/YakaboxSmall.png';
 import CisoboxSmallImage from '../images/CisoboxSmall.png';
+import { ThemeContext } from '../App';
 
 const work = [
   {
@@ -24,7 +22,8 @@ const work = [
   },
 ]
 
-function Work({theme}) {
+function Work() {
+  const theme = useContext(ThemeContext)
   return (
     <section className={clsx(themes[`${theme}`]['background'], "relative px-4 pt-16 pb-20 sm:px-6 lg:px-8 lg:pt-24 lg:pb-28")}>
       <div className="absolute inset-0">
@@ -33,7 +32,7 @@ function Work({theme}) {
       <div className="relative mx-auto max-w-7xl">
         <div className="text-center">
           <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl">A Peek at Some of My Past Projects</h2>
-          <Dash theme={theme}/>
+          <Dash />
           <p className="mx-auto max-w-2xl text-xl text-gray-500 dark:text-gray-400">
             Case Studies and Examples of Products I've Helped Create.
           </p>

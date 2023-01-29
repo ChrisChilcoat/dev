@@ -1,7 +1,10 @@
+import { useContext } from "react";
 import clsx from "clsx";
 import { themes } from "../components/ThemeData";
+import { ThemeContext } from "../App";
 
-function Contact({theme}) {
+function Contact() {
+  const theme = useContext(ThemeContext)
   return (
     <section className={clsx(themes[`${theme}`]['background'], "border-t")}>
       <div className="mx-auto max-w-md p-6 sm:max-w-3xl lg:max-w-7xl lg:p-8">

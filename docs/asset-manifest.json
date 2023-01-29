@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.53039ef4.css",
-    "main.js": "/dev/static/js/main.58488f2b.js",
+    "main.css": "/dev/static/css/main.0c38e497.css",
+    "main.js": "/dev/static/js/main.bf43cde3.js",
     "static/js/787.b3d79b74.chunk.js": "/dev/static/js/787.b3d79b74.chunk.js",
     "static/media/SocialMediaSmall.png": "/dev/static/media/SocialMediaSmall.9bf0b4b0398b6368bd1f.png",
     "static/media/me.jpg": "/dev/static/media/me.4b71153305f75af763f2.jpg",
@@ -16,21 +16,19 @@
     "static/media/yakabox13.png": "/dev/static/media/yakabox13.a4dd965565a3dc9ce219.png",
     "static/media/yakabox7.png": "/dev/static/media/yakabox7.78fd84bddecd546fc972.png",
     "static/media/yakabox2.png": "/dev/static/media/yakabox2.39b3236f3279490effae.png",
-    "static/media/yakabox6.png": "/dev/static/media/yakabox6.39b3236f3279490effae.png",
     "static/media/yakabox10.png": "/dev/static/media/yakabox10.759215ecd4562eba76a8.png",
     "static/media/yakabox4.png": "/dev/static/media/yakabox4.e16595cb07b8186bf501.png",
     "static/media/yakabox8.png": "/dev/static/media/yakabox8.a8c17eb7c21f1f46620b.png",
     "static/media/yakabox19.png": "/dev/static/media/yakabox19.409102f9a0435ed8a79f.png",
     "static/media/yakabox11.png": "/dev/static/media/yakabox11.21b04d89bd762f391cfc.png",
-    "static/media/yakabox16.png": "/dev/static/media/yakabox16.e78e9ca9f2730f54e813.png",
     "static/media/will.jpg": "/dev/static/media/will.a0b663061ee3c2bc5983.jpg",
     "index.html": "/dev/index.html",
-    "main.53039ef4.css.map": "/dev/static/css/main.53039ef4.css.map",
-    "main.58488f2b.js.map": "/dev/static/js/main.58488f2b.js.map",
+    "main.0c38e497.css.map": "/dev/static/css/main.0c38e497.css.map",
+    "main.bf43cde3.js.map": "/dev/static/js/main.bf43cde3.js.map",
     "787.b3d79b74.chunk.js.map": "/dev/static/js/787.b3d79b74.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.53039ef4.css",
-    "static/js/main.58488f2b.js"
+    "static/css/main.0c38e497.css",
+    "static/js/main.bf43cde3.js"
   ]
 }
