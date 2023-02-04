@@ -92,7 +92,7 @@ export default function Testimonial() {
                       />
                     </div>
                     <div className="mt-3 text-center md:mt-0 md:ml-4 md:flex md:items-center">
-                      <div className="text-base font-medium text-gray-900 dark:text-gray-100">Will Bondie</div>
+                      <div className="text-base font-medium text-gray-900 dark:text-gray-100">Adam Leviton</div>
                       <svg className={clsx(themes[`${theme}`]['textColor'], "mx-1 hidden h-5 w-5 md:block")} fill="currentColor" viewBox="0 0 20 20">
                         <path d="M11 0h3L9 20H6l5-20z" />
                       </svg>
