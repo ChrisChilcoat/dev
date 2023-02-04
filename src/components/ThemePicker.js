@@ -28,7 +28,7 @@ export default function ThemePicker(props) {
   }
 
   return (
-    <div className="fixed top-5 right-5 z-40">
+    <div className="fixed top-6 right-5 z-40">
       <Menu>
       {({ open, active }) => (
         <>
@@ -37,7 +37,7 @@ export default function ThemePicker(props) {
             <PaintBrushIcon className={clsx(themes[`${theme}`]['primaryButton'], "text-white w-7 h-7 m-2 p-1 rounded-full")} aria-hidden="true" />
           </Menu.Button>
         </Tippy>
-        <Menu.Items className={clsx(themes[`${theme}`]['backgroundDark'], "fixed flex flex-row top-5 right-16 rounded-l-full shadow-xl")}>
+        <Menu.Items className={clsx(themes[`${theme}`]['backgroundDark'], "fixed flex flex-row top-6 right-16 rounded-l-full shadow-xl")}>
           <Menu.Item>
               <button 
                 className={clsx(themes['red']['primaryButton'], "rounded-full w-7 h-7 m-2")} 

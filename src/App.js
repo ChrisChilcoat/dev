@@ -36,7 +36,7 @@ export default function App() {
                 <Work/>
                 <Contact/>
                 <Footer/>
-                <span className="invisible sm:visible">
+                <span className="invisible sm:visible mt-1">
                   <ThemePicker setTheme={setTheme} />
                   <DarkThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
                 </span>
@@ -49,6 +49,10 @@ export default function App() {
                 <Yakabox/>
                 <Contact/>
                 <Footer/>
+                <span className="invisible sm:visible">
+                  <ThemePicker setTheme={setTheme} />
+                  <DarkThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+                </span>
                 <ScrollToTop/>
               </>
             } />
@@ -58,6 +62,10 @@ export default function App() {
                 <Cisobox/>
                 <Contact/>
                 <Footer/>
+                <span className="invisible sm:visible">
+                  <ThemePicker setTheme={setTheme} />
+                  <DarkThemeToggle darkMode={darkMode} setDarkMode={setDarkMode} />
+                </span>
                 <ScrollToTop/>
               </>
             } />

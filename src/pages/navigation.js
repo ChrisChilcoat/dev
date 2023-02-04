@@ -40,7 +40,7 @@ function Navigation() {
             </nav>
           </div>
       </div>
-      <div class="flex justify-center lg:justify-start absolute right-6 top-6 z-20">
+      <div class="flex justify-center lg:justify-start absolute right-6 top-6 z-20 pr-14">
         <div class="rounded-md shadow hidden sm:flex">
           <a  
             target="_blank" 
@@ -48,7 +48,7 @@ function Navigation() {
             className={clsx(themes[`${theme}`]['secondaryButton'], "flex w-full items-center justify-center rounded-md border border-transparent px-7 py-2 text-base font-medium text-white md:py-2 md:px-8 md:text-lg")}
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="h-4 w-4 mr-2"><path d="M5.625 1.5c-1.036 0-1.875.84-1.875 1.875v17.25c0 1.035.84 1.875 1.875 1.875h12.75c1.035 0 1.875-.84 1.875-1.875V12.75A3.75 3.75 0 0016.5 9h-1.875a1.875 1.875 0 01-1.875-1.875V5.25A3.75 3.75 0 009 1.5H5.625z"></path><path d="M12.971 1.816A5.23 5.23 0 0114.25 5.25v1.875c0 .207.168.375.375.375H16.5a5.23 5.23 0 013.434 1.279 9.768 9.768 0 00-6.963-6.963z"></path></svg>
-            Resume
+            Résumé
           </a>
         </div>
         <div class="mt-0 sm:ml-3">

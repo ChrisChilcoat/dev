@@ -22,7 +22,7 @@ export default function DarkThemeToggle(props) {
   }
 
   return (
-    <div className="fixed top-[70px] right-5 z-40">
+    <div className="fixed top-[75px] right-5 z-40">
       <Tippy content={(props.darkMode) ? 'Light' : 'Dark'} delay={[500, 0]}  placement='left'>
         <button 
           className={`${menu.button}`}
