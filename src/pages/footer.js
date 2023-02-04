@@ -33,7 +33,7 @@ const navigation = {
 function Footer() {
   const theme = useContext(ThemeContext)
   return (    
-    <footer className={clsx(themes[`${theme}`]['background'], "border-t")}>
+    <footer className={clsx(themes[`${theme}`]['background'])}>
       <div className="p-8 md:flex md:items-center md:justify-between">
         <div className="flex space-x-6 md:order-2">
           {navigation.social.map((item) => (

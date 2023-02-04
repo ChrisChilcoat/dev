@@ -1,13 +1,14 @@
 import { useContext } from "react";
 import clsx from "clsx";
 import { themes } from "../components/ThemeData";
+import { EnvelopeIcon } from "@heroicons/react/20/solid";
 import { ThemeContext } from "../App";
 
 function Contact() {
   const theme = useContext(ThemeContext)
   return (
-    <section className={clsx(themes[`${theme}`]['background'], "border-t")}>
-      <div className="mx-auto max-w-md p-6 sm:max-w-3xl lg:max-w-7xl lg:p-8">
+    <section className={clsx(themes[`${theme}`]['background'])}>
+      <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-7xl lg:px-8">
           <div className={clsx(themes[`${theme}`]['primaryColorDark'], "relative overflow-hidden rounded-2xl px-6 py-10 shadow-xl sm:px-12 sm:py-20")}>
             <div aria-hidden="true" className="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0">
               <svg
@@ -34,12 +35,16 @@ function Contact() {
                 <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
                   Let's Solve Problems Together.
                 </h2>
-                <p className="mx-auto mt-6 max-w-2xl text-lg text-indigo-200">
+                <p className="mx-auto mt-6 max-w-2xl text-lg text-slate-200">
                 If you're interested in collaborating, I'd love to hear from you!
                 </p>
-                <p className="mx-auto mt-6 max-w-2xl text-2xl font-bold  text-white">
-                  cchilc01@gmail.com
-</p>
+                <div class="mt-12 sm:mx-auto sm:flex justify-center">
+                  <div class="mt-4 sm:mt-0 sm:ml-3">
+                    <a href="mailto:cchilc01@gmail.com"className={clsx(themes[`${theme}`]['secondaryButton'], "flex w-full items-center justify-center rounded-md border border-transparent px-7 py-2 text-base font-medium md:py-2 md:px-8 md:text-lg")}>
+                      <EnvelopeIcon className="h-6 w-6 mr-2" aria-hidden="true" /> Let's Talk
+                    </a>
+                  </div>
+                </div>
               </div>
               
             </div>

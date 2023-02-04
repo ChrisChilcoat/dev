@@ -8,7 +8,7 @@ const themes = {
     primaryButton: 'bg-blue-600 hover:bg-blue-700',
     secondaryButton: 'bg-blue-100 text-blue-700 hover:bg-blue-200',
     textColor: 'text-blue-500',
-    background: 'bg-blue-50 dark:bg-slate-800 border-blue-200 dark:border-slate-900',
+    background: 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-900',
     backgroundDark: 'bg-blue-100',
   },
   red: {
@@ -20,7 +20,7 @@ const themes = {
     primaryButton: 'bg-red-600 hover:bg-red-700',
     secondaryButton: 'bg-red-100 text-red-700 hover:bg-red-200',
     textColor: 'text-red-500',
-    background: 'bg-red-50 dark:bg-slate-800 border-red-200 dark:border-slate-900',
+    background: 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-900',
     backgroundDark: 'bg-red-100',
   },
   green: {
@@ -32,7 +32,7 @@ const themes = {
     primaryButton: 'bg-green-600 hover:bg-green-700',
     secondaryButton: 'bg-green-100 text-green-700 hover:bg-green-200',
     textColor: 'text-green-500',
-    background: 'bg-green-50 dark:bg-slate-800 border-green-200 dark:border-slate-900',
+    background: 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-900',
     backgroundDark: 'bg-green-100',
   },
   purple: {
@@ -44,7 +44,7 @@ const themes = {
     primaryButton: 'bg-purple-600 hover:bg-purple-700',
     secondaryButton: 'bg-purple-100 text-purple-700 hover:bg-purple-200',
     textColor: 'text-purple-500',
-    background: 'bg-purple-50 dark:bg-slate-800 border-purple-200 dark:border-slate-900',
+    background: 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-900',
     backgroundDark: 'bg-purple-100',
   },
   pink: {
@@ -56,21 +56,21 @@ const themes = {
     primaryButton: 'bg-pink-600 hover:bg-pink-700',
     secondaryButton: 'bg-pink-100 text-pink-700 hover:bg-pink-200',
     textColor: 'text-pink-500',
-    background: 'bg-pink-50 dark:bg-slate-800 border-pink-200 dark:border-slate-900',
+    background: 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-900',
     backgroundDark: 'bg-pink-100',
   },
   yellow: {
     primaryColor: 'bg-yellow-500',
     primaryColorDark: 'bg-yellow-600',
-    secondaryColor: 'bg-lime-500',
-    primaryGradient: 'from-orange-500 to-yellow-400',
-    secondaryGradient: 'from-orange-500 to-yellow-600',
-    primaryButton: 'bg-yellow-500 hover:bg-yellow-600',
+    secondaryColor: 'bg-amber-500',
+    primaryGradient: 'from-amber-500 to-yellow-500',
+    secondaryGradient: 'from-amber-500 to-yellow-600',
+    primaryButton: 'bg-yellow-600 hover:bg-yellow-700',
     secondaryButton: 'bg-yellow-100 text-yellow-700 hover:bg-yellow-200',
     textColor: 'text-yellow-500',
-    background: 'bg-yellow-50 dark:bg-slate-800 border-yellow-200 dark:border-slate-900',
+    background: 'bg-slate-50 dark:bg-slate-800 border-slate-200 dark:border-slate-900',
     backgroundDark: 'bg-yellow-100',
-  }
+  },
 }
 
 export { themes }
