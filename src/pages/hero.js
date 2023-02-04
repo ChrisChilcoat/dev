@@ -58,7 +58,7 @@ function Hero() {
                     href="https://drive.google.com/file/d/18HFQtope2psoP_OOmtgXrAPtaA_UsIsK/view" 
                     className={clsx(themes[`${theme}`]['primaryButton'], "flex w-full items-center justify-center rounded-md border border-transparent bg-blue-600 hover:bg-blue-700 px-7 py-2 text-base font-medium text-white md:py-2 md:px-8 md:text-lg")}>
                     <DocumentIcon className="h-4 w-4 mr-2" aria-hidden="true" /> 
-                    résumé
+                    Résumé
                   </a>
                 </div>
                 <div className="mt-3 sm:mt-0 sm:ml-3">
